@@ -1,0 +1,16 @@
+let read = require('readline-sync');
+let marks = read.questionFloat("Enter your Total Marks Percentage:")
+if(marks > 90 && marks < 100)
+console.log("GRADE A")
+else if(marks >= 80 && marks < 90)
+console.log("GRADE B")
+else if(marks >= 70 && marks < 80)
+console.log("GRADE C")
+else if(marks >= 60 && marks < 70)
+console.log("GRADE D")
+else if(marks >= 50 && marks < 60)
+console.log("GRADE E")
+else if(marks > 100 || marks < 0)
+console.log("INVALID ENTRY!!!")
+else
+console.log("FAILED")
